@@ -1,0 +1,42 @@
+body{
+    background-color: #e3f2fd;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-container{
+    width: 100vw;
+}
+h3{
+    color: #1a237e;
+    font-size: calc(10px + 3vw);
+}
+td i{
+    font-size: calc(10px + 3vw);
+}
+td button{
+    width: 16vw;
+    height: 8vw;
+}
+input{
+    width: 65vw;
+    height: 8vw;
+    background-color: #A1C2F1;
+    font-size: 8vw;
+}
+.sign-btn, .del-btn, .clr-btn, .dec-btn{
+    background-color: #2196f3;
+}
+.equal-btn{
+    background-color: #1976d2;
+    width: 33vw;
+    height: 8vw;
+}
+
+.num-btn{
+    background-color: #64b5f6;
+}

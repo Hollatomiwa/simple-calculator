@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container body-container mt-5">
+            <div class="container text-container">
+                <h3>Simple Calculator with basic arithmetic</h3>
+            </div>
+            <div>
+                <div class="container calc-container">
+                    <table>
+                        <thead>
+                            <td colspan="4">
+                                <input type="text" name="" id="display" value="0" disabled>
+                            </td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button class="btn sign-btn" type="button" name="button" value="/" id="divide">
+                                        <i class="fa-solid fa-divide"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn sign-btn" type="button" name="button" value="*" id="multiply">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn clr-btn" type="button" name="button" id="clear"> 
+                                        <i class="fa-solid fa-c"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn del-btn" type="button" name="button" id="delete">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="7" id="seven">
+                                        <i class="fa-solid fa-7"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="8" id="eight">
+                                        <i class="fa-solid fa-8"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="9" id="nine">
+                                        <i class="fa-solid fa-9"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn dec-btn" type="button" name="button" value="." id="decimal">
+                                        <i class="bi bi-dot"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="4" id="four">
+                                        <i class="fa-solid fa-4"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="5" id="five">
+                                        <i class="fa-solid fa-5"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="6" id="six">
+                                        <i class="fa-solid fa-6"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn sign-btn" type="button" name="button" value="-" id="minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="1" id="one">
+                                        <i class="fa-solid fa-1"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="2" id="two">
+                                        <i class="fa-solid fa-2"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="3" id="three">
+                                        <i class="fa-solid fa-3"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn sign-btn" type="button" name="button" value="+" id="plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="btn" type="button" name="button" value=""></button>
+                                </td>
+                                <td>
+                                    <button class="btn num-btn" type="button" name="button" value="0" id="zero">
+                                        <i class="fa-solid fa-0"></i>
+                                    </button>
+                                </td>
+                                <td colspan="2">
+                                    <button class="btn equal-btn" type="button" name="button" id="equal">
+                                        <i class="fa-solid fa-equals"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="main.js" async defer></script>
+    </body>
+</html>
